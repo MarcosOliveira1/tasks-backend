@@ -6,5 +6,10 @@ pipeline {
                 bat 'mvn clean package -DskipTest=true'
             }
         }
+        stage('unitis teste') {
+            steps{
+                bat 'mvn test'
+            }
+        }
     }
 }
